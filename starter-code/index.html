@@ -10,22 +10,29 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <script src="script.js" defer></script>
     <title>Frontend Mentor | Password generator app</title>
   </head>
   <body>
     <h2>Password Generator</h2>
-
-    <div>P4$5W0rD!</div>
-
-    Character Length
-    <input type="checkbox" name="" id="" />Include Uppercase Letters
-    <input type="checkbox" name="" id="" /> Include Lowercase Letters
-    <input type="checkbox" name="" id="" />Include Numbers
-    <input type="checkbox" name="" id="" />Include Symbols
-
-    <div><p>Strength</p></div>
-
-    <button>Generate</button>
+    <div>
+      <p class="generatedPassword">P4$5W0rD!</p>
+      <img src="assets/images/icon-copy.svg" alt="copy icon" id="copy" />
+    </div>
+    <div>
+      <div>
+        <p>Character Length</p>
+        <p class="passwordLength">10</p>
+      </div>
+      <input type="range" id="length" min="4" max="25" value="10" />
+      <input type="checkbox" name="" id="" />Include Uppercase Letters
+      <input type="checkbox" name="" id="" /> Include Lowercase Letters
+      <input type="checkbox" name="" id="" />Include Numbers
+      <input type="checkbox" name="" id="" />Include Symbols
+      <div><p>Strength</p></div>
+      <button>
+        Generate <img src="assets/images/icon-arrow-right.svg" alt="" />
+      </button>
+    </div>
   </body>
 </html>
