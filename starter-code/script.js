@@ -7,15 +7,18 @@ const includeUppercase = document.querySelector("#uppercase");
 const includeNumbers = document.querySelector("#numbers");
 const includeSymbols = document.querySelector("#symbols");
 const btn = document.querySelector(".generate");
-
-copy.addEventListener("click", async ()=>{
-    await navigator.clipboard.writeText(generatedPassword.textContent);
-})
+const box1 = document.querySelectorAll(".box1");
+const box2 = document.querySelectorAll(".box2");
+const box3 = document.querySelectorAll(".box3");
 const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?";
 let characters = "";
+
+copy.addEventListener("click", async ()=>{
+    await navigator.clipboard.writeText(generatedPassword.textContent);
+})
 
 btn.addEventListener("click", (event)=>{
     if(includeUppercase.checked && includeLowercase.checked && includeNumbers.checked && includeSymbols.checked){
@@ -96,3 +99,4 @@ async function passwordGenerator (characters){
         generatedPassword.textContent = passsword;
     })
     }
+

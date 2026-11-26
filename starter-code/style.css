@@ -2,11 +2,66 @@
     margin: 0;
 }
 body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(240, 20%, 7%);
+    align-items: center;
 }
-div {
-    background-color: hsl(240, 10%, 15%);
+h2 {
+    text-align: center;
 }
-button {
-    background-color: hsl(130, 100%, 80%);
+.passwordContainer {
+ width: 80%;
+ display: flex;
+ justify-content: space-between;
+ margin: 1rem 0;
+ background-color: hsl(240, 10%, 15%);
+ color: white;
+ height: 3rem;
+ padding: 0 0.4rem;
+ align-items: center;
+}
+.card {
+    width: 80%;
+    padding: 1rem;
+    color: white;
+    background-color: hsl(240, 10%, 15%);;
+}
+.lengthInput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+#length {
+    display: block;
+    width: 100%;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.strengthTester {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    height: 3rem;
+    background-color: hsl(240, 20%, 7%);
+    align-items: center;
+    padding: 0 0.4rem;
+}
+.generate {
+    width: 100%;
+    height: 2rem;
+}
+.strengthBox {
+    display: flex;
+}
+.uppercaseContainer,
+.lowercaseContainer,
+.numbersContainer,
+.symbolsContainer {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
 }

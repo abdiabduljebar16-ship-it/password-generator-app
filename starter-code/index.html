@@ -10,29 +10,50 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <!--<link rel="stylesheet" href="style.css" />-->
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Frontend Mentor | Password generator app</title>
   </head>
   <body>
     <h2>Password Generator</h2>
-    <div>
+    <div class="passwordContainer">
       <p class="generatedPassword">P4$5W0rD!</p>
       <img src="assets/images/icon-copy.svg" alt="copy icon" id="copy" />
     </div>
-    <div>
-      <div>
+    <div class="card">
+      <div class="lengthInput">
         <p>Character Length</p>
         <p class="passwordLength">10</p>
       </div>
       <input type="range" id="length" min="4" max="25" value="6" />
-      <input type="checkbox" name="" id="uppercase" />Include Uppercase Letters
-      <input type="checkbox" name="" id="lowercase" /> Include Lowercase Letters
-      <input type="checkbox" name="" id="numbers" />Include Numbers
-      <input type="checkbox" name="" id="symbols" />Include Symbols
-      <div><p>Strength</p></div>
+      <div class="uppercaseContainer">
+        <input type="checkbox" name="" id="uppercase" />
+        <p>Include Uppercase Letters</p>
+      </div>
+      <div class="lowercaseContainer">
+        <input type="checkbox" name="" id="lowercase" />
+        <p>Include Lowercase Letters</p>
+      </div>
+      <div class="numbersContainer">
+        <input type="checkbox" name="" id="numbers" />
+        <p>Include Numbers</p>
+      </div>
+      <div class="symbolsContainer">
+        <input type="checkbox" name="" id="symbols" />
+        <p>Include Symbols</p>
+      </div>
+      <div class="strengthTester">
+        <p>Strength</p>
+        <div class="strengthBox">
+          <p class="strength">Medium</p>
+          <div class="box box1">A</div>
+          <div class="box box2">B</div>
+          <div class="box box3">C</div>
+          <div class="box">D</div>
+        </div>
+      </div>
       <button class="generate">
-        Generate <img src="assets/images/icon-arrow-right.svg" alt="" />
+        GENERATE <img src="assets/images/icon-arrow-right.svg" alt="" />
       </button>
     </div>
   </body>
