@@ -100,3 +100,11 @@ h2 {
     gap: 1rem;
     margin: 0.5rem 0;
 }
+@media(min-width: 1024px){
+    .passwordContainer  {
+        width: 30%;
+    }
+    .card {
+        width: 30%;
+    }
+}
